@@ -40,6 +40,7 @@ class MainViewController: UITableViewController {
         cell.imageView?.image = UIImage(named: restaurantNames[indexPath.row])
 
         // Configure the cell...
+        
 
         return cell
      }
