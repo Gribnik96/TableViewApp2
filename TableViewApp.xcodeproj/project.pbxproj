@@ -13,6 +13,8 @@
 		B205D223260B196200776520 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B205D221260B196200776520 /* LaunchScreen.storyboard */; };
 		B205D22B260B1A5A00776520 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B205D22A260B1A5A00776520 /* MainViewController.swift */; };
 		B22E4516260B84B500124B39 /* CustomtableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22E4515260B84B500124B39 /* CustomtableViewCell.swift */; };
+		B22E4518260C631E00124B39 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22E4517260C631E00124B39 /* PlaceModel.swift */; };
+		B22E451A260C84B000124B39 /* NewPlaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22E4519260C84B000124B39 /* NewPlaceTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B205D224260B196200776520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B205D22A260B1A5A00776520 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B22E4515260B84B500124B39 /* CustomtableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomtableViewCell.swift; sourceTree = "<group>"; };
+		B22E4517260C631E00124B39 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		B22E4519260C84B000124B39 /* NewPlaceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				B205D21C260B196100776520 /* Main.storyboard */,
 				B22E4515260B84B500124B39 /* CustomtableViewCell.swift */,
 				B205D22A260B1A5A00776520 /* MainViewController.swift */,
+				B22E4519260C84B000124B39 /* NewPlaceTableViewController.swift */,
+				B22E4517260C631E00124B39 /* PlaceModel.swift */,
 				B205D21F260B196200776520 /* Assets.xcassets */,
 				B205D221260B196200776520 /* LaunchScreen.storyboard */,
 				B205D224260B196200776520 /* Info.plist */,
@@ -141,6 +147,8 @@
 				B22E4516260B84B500124B39 /* CustomtableViewCell.swift in Sources */,
 				B205D22B260B1A5A00776520 /* MainViewController.swift in Sources */,
 				B205D219260B196100776520 /* AppDelegate.swift in Sources */,
+				B22E4518260C631E00124B39 /* PlaceModel.swift in Sources */,
+				B22E451A260C84B000124B39 /* NewPlaceTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +302,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.TableViewApp;
+				PRODUCT_BUNDLE_IDENTIFIER = TableViewApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,7 +321,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.TableViewApp;
+				PRODUCT_BUNDLE_IDENTIFIER = TableViewApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
