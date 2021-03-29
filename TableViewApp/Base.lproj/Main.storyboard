@@ -95,7 +95,7 @@
             <objects>
                 <tableViewController id="eHk-qF-zmO" customClass="NewPlaceTableViewController" customModule="TableViewApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="opc-rg-96p">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
@@ -238,13 +238,21 @@
                     <navigationItem key="navigationItem" title="New Place" id="335-Dw-YF0">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="R11-3w-vmc">
                             <connections>
-                                <segue destination="CZa-l4-y9k" kind="unwind" unwindAction="cancelAction:" id="T2Y-cQ-mUZ"/>
+                                <action selector="cancelAction:" destination="eHk-qF-zmO" id="3L7-JG-3TW"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="mGk-3E-CLA"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="mGk-3E-CLA">
+                            <connections>
+                                <segue destination="CZa-l4-y9k" kind="unwind" unwindAction="unwindSegue:" id="nRj-43-tGN"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="imageOfPlace" destination="BXs-iB-pry" id="FKa-6t-Vdk"/>
+                        <outlet property="imagePlace" destination="BXs-iB-pry" id="FKa-6t-Vdk"/>
+                        <outlet property="locationPlace" destination="WXN-lB-7m2" id="kR5-u1-two"/>
+                        <outlet property="namePlace" destination="HiU-M1-Kww" id="K4B-ai-Jnp"/>
+                        <outlet property="saveButtom" destination="mGk-3E-CLA" id="yUL-JX-dw5"/>
+                        <outlet property="typePlace" destination="5rP-Ag-cJm" id="Myr-5F-3Dg"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hX3-xI-7SZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -277,6 +285,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" id="PVf-CT-77c" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zD9-8r-WGw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
